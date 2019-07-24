@@ -1,0 +1,91 @@
+{
+	"saplogonpath": "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe",
+    "conectionName": "EP0 (Produccion ERP LatAm)",
+    "username" : "TCPASOTO",
+    "password" : "",
+	"transaction_threads":0,
+    "transactions_execute": [
+        {
+    		"transaction_code":"ZCO_0137",
+    	    "executions_steps": [
+    	             { "step_id": 1,
+    				   "comment":"Sociedad CO",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[0]/usr/ctxtPA_KOKRS",
+    	               "action":"text",
+    				   "value_type":"input"
+    	             },
+    	             { "step_id": 2,
+    	               "comment":"Generando Reporte",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[0]/tbar[1]/btn[8]",
+    	               "action":"press",
+    				     "value_type":"na"
+    	             },
+    	             { "step_id": 3,
+    	               "comment":"Accion de Descargar",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[0]/usr/cntlGV_CONTAINER_ALV_DETALLE/shellcont/shell",
+    	               "action":"pressToolbarContextButton",
+    				     "value_type":"fixed",
+    				     "value": "&MB_EXPORT"
+    	             },
+    	             { "step_id": 4,
+    	               "comment":"Seleccionando Descarga en Excel",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[0]/usr/cntlGV_CONTAINER_ALV_DETALLE/shellcont/shell",
+    	               "action":"selectContextMenuItem",
+    				     "value_type":"fixed",
+    				     "value": "&XXL"
+    	             },
+    	             { "step_id": 5,
+    	               "comment":"Accion de Ejecutar",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/usr/radRB_OTHERS",
+    	               "action":"select",
+    				     "value_type":"na"
+    	             },
+    	             { "step_id": 6,
+    	               "comment":"Seleccion de Lista",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/usr/cmbG_LISTBOX",
+    	               "action":"key",
+    				     "value_type":"fixed",
+    				     "value": "10"
+    	             },
+    	             { "step_id": 7,
+    	               "comment":"Accion Ejecutar",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/tbar[0]/btn[0]",
+    	               "action":"press",
+    				     "value_type":"na"
+    	             },
+    	             { "step_id": 8,
+    	               "comment":"Ingresando Ruta de Salida",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/usr/ctxtDY_PATH",
+    	               "action":"text",
+    				     "value_type":"fixed",
+    				     "value": "C:\\Control de Gestion"
+    	             },
+    	             { "step_id": 9,
+    	               "comment":"Ingresando Nombre Archivo",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/usr/ctxtDY_FILENAME",
+    	               "action":"text",
+    				     "value_type":"fixed",
+    				     "value": "prueba_archivo_descarga_sap.xlsx"
+    	             },
+    	             { "step_id": 10,
+    	               "comment":"Proceso de Generacion de Excel (Descarga)",
+    	               "type_find":"id",
+    	               "cod_find":"wnd[1]/tbar[0]/btn[0]",
+    	               "action":"press",
+    				     "value_type":"na"
+    	             }
+    	             
+    	             
+    	    ]
+    	}
+    ]
+}
