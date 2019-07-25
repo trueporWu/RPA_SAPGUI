@@ -6,6 +6,7 @@ El siguiente programa se desarrollo pensando en automatizar los procedimientos m
 - Utilización de funciones SAPGUI
 - Archivo de Configuración en JSON
 
+<!--
 ```mermaid
 graph LR
 A[Inicio Proceso] --> A2[Identifica Transaccion]
@@ -18,6 +19,11 @@ E[Termino Transaccion] --> F{Siguiente Transaccion}
 F -- SI --> A2[Identificar Transaccion]
 F -- NO --> G[Termino Proceso]
 ```
+-->
+
+![Flowchart](./proceso_rpa_python_sap.PNG
+)
+
 
 #### Archivo de Configuración
 El archivo de configuración se utiliza para decirle especificarle los pasos y las acciones que debe ejecutar el programa en 
