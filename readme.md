@@ -20,9 +20,7 @@ F -- SI --> A2[Identificar Transaccion]
 F -- NO --> G[Termino Proceso]
 ```
 -->
-
-![Flowchart](./proceso_rpa_python_sap.PNG
-)
+![Flowchart](./proceso_rpa_python_sap.PNG)
 
 
 #### Archivo de Configuración
